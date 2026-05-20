@@ -45,9 +45,15 @@ En la práctica, ajustamos parámetros geométricos de la Moxon (espaciado entre
 
 **29/04/2026**:
 
-Revisamos el modelo físico real de la antena Moxon. Decidimos quedarnos con este diseño para el prototipo final ya que, aunque la Yagi nos daba un poco más de ganancia teórica en las simulaciones (aproximadamente 1.5 dB de diferencia en el lóbulo principal), priorizamos compacidad y robustez para integrarla mejor al soporte motorizado.
+Revisamos el modelo físico real de la **antena Moxon**. Decidimos quedarnos con este diseño para el prototipo final ya que, aunque la **Yagi** nos daba un poco más de ganancia teórica en las simulaciones (aproximadamente 1.5 dB de diferencia en el lóbulo principal), priorizamos compacidad y robustez para integrarla mejor al soporte motorizado.
+
+**Antena Yogi**
+![Antena Yogi](docs/Antena_Yagi_Television.jpg)
 
 La Antena Moxon presenta una **relación frente/back superior** en un **volumen reducido**, lo que facilita el montaje sobre el mástil rotatorio sin generar un momento de torsión excesivo. También calculamos las medidas exactas para que funcione en la frecuencia que necesitamos para el prototipo sintonizado a 145 MHz (banda de 2 metros, dentro del segmento de aficionados) y vamos a verificarlas con el medidor antes de ponernos a construirla.
+
+**Antena Moxon**
+![Antenta Moxon](docs/Antena_Moxon.jpg)
 
 **06/05/2026**:
 
