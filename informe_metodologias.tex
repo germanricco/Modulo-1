@@ -1,0 +1,133 @@
+\documentclass[12pt, a4paper]{article}
+
+% Paquetes esenciales
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla]{babel} % Soporte para español y cambio de "Cuadro" a "Tabla"
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{booktabs}   % Para tablas de calidad profesional
+\usepackage{tabularx}   % Para tablas con ajuste automático de ancho
+\usepackage{hyperref}   % Para enlaces y marcadores en el PDF
+\usepackage{enumitem}   % Para personalizar listas
+
+% Configuración de enlaces
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=teal,
+    citecolor=blue
+}
+
+\title{\textbf{Metodologías Ágiles y Optimización de Procesos:}\\ \Large Un análisis de Scrum y Lean Six Sigma}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+El presente informe analiza y compara los marcos de trabajo orientados a la mejora continua en la gestión de proyectos y operaciones. Se examinan los principios del Manifiesto Ágil, la estructura iterativa e incremental de Scrum, y el rigor estadístico de Lean Six Sigma. El objetivo es proporcionar una guía clara sobre cuándo aplicar cada metodología y cómo su integración puede maximizar la entrega de valor, reducir la variabilidad y eliminar desperdicios en entornos tecnológicos e industriales.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+En el panorama actual del desarrollo tecnológico y la ingeniería, la gestión de proyectos ha evolucionado desde modelos secuenciales rígidos (como el modelo en Cascada) hacia marcos de trabajo adaptativos y orientados a la mejora continua. \textit{Agile}, \textit{Scrum} y \textit{Lean Six Sigma} representan enfoques complementarios diseñados para maximizar la eficiencia, asegurar la calidad y mantener la adaptabilidad ante requerimientos cambiantes. Mientras que Agile establece una filosofía rectora, Scrum proporciona un marco de implementación empírico y Lean Six Sigma aporta herramientas analíticas para la optimización de procesos.
+
+\section{La Filosofía Agile}
+Agile no es una metodología estricta, sino una mentalidad y un conjunto de principios formulados originalmente en el Manifiesto Ágil \cite{beck2001}. Su objetivo principal es la adaptación rápida y la entrega temprana de valor.
+
+\subsection{Valores Fundamentales}
+El enfoque ágil se sostiene sobre cuatro pilares que priorizan la agilidad sobre la burocracia:
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Individuos e interacciones} sobre procesos y herramientas.
+    \item \textbf{Software (o producto) funcionando} sobre documentación exhaustiva.
+    \item \textbf{Colaboración con el cliente} sobre negociación contractual.
+    \item \textbf{Respuesta ante el cambio} sobre el seguimiento estricto de un plan.
+\end{itemize}
+
+Esta filosofía resulta indispensable en entornos de alta incertidumbre, como el desarrollo de firmware o el diseño de sistemas embebidos, donde los requerimientos de hardware y software evolucionan de forma paralela.
+
+\section{El Marco de Trabajo Scrum}
+Scrum es el marco ágil de mayor adopción global, diseñado para abordar problemas complejos adaptativos \cite{schwaber2020}. A diferencia de los métodos predictivos, Scrum se basa en el control empírico de procesos, sustentado en tres pilares: \textbf{Transparencia, Inspección y Adaptación}.
+
+\subsection{Roles, Eventos y Artefactos}
+Scrum estructura el trabajo en ciclos iterativos denominados \textit{Sprints} (generalmente de 2 a 4 semanas), operando a través de componentes bien definidos:
+
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Roles:} 
+    \begin{itemize}
+        \item \textit{Product Owner:} Maximiza el valor del producto y gestiona el \textit{Product Backlog}.
+        \item \textit{Scrum Master:} Facilita el marco de trabajo, elimina impedimentos y actúa como líder servicial.
+        \item \textit{Developers:} Equipo interdisciplinario y autoorganizado responsable de crear el incremento de valor.
+    \end{itemize}
+    \item \textbf{Eventos:} Además del \textit{Sprint}, incluye el \textit{Sprint Planning}, el \textit{Daily Scrum} (sincronización diaria), la \textit{Sprint Review} (inspección del producto) y la \textit{Sprint Retrospective} (inspección del proceso).
+    \item \textbf{Artefactos:} El \textit{Product Backlog} (lista de requerimientos), el \textit{Sprint Backlog} (trabajo comprometido para el ciclo) y el \textit{Incremento} (producto funcional entregable).
+\end{itemize}
+
+\section{Metodología Lean Six Sigma}
+Lean Six Sigma (LSS) es una sinergia metodológica orientada a la excelencia operativa. Combina la velocidad y agilidad de Lean con el rigor estadístico de Six Sigma \cite{george2002}.
+
+\subsection{Integración de Enfoques}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Lean Manufacturing:} Originado en el Sistema de Producción Toyota, se centra en optimizar el flujo de valor mediante la identificación y eliminación de los ocho tipos de desperdicios (\textit{Muda}): sobreproducción, inventario, esperas, movimientos, transporte, reprocesos, sobreprocesamiento y talento no utilizado.
+    \item \textbf{Six Sigma:} Creado por Motorola, busca reducir la variabilidad del proceso para que este no produzca más de 3.4 defectos por millón de oportunidades (DPMO).
+\end{itemize}
+
+\subsection{El Ciclo DMAIC}
+El núcleo de mejora de Six Sigma se ejecuta mediante el ciclo estructurado basado en datos:
+\begin{enumerate}
+    \item \textbf{Definir (Define):} Establecer el problema, el alcance y los requerimientos del cliente.
+    \item \textbf{Medir (Measure):} Cuantificar el rendimiento actual del proceso.
+    \item \textbf{Analizar (Analyze):} Identificar la causa raíz de los defectos (ej. mediante diagramas de Ishikawa o análisis de datos).
+    \item \textbf{Mejorar (Improve):} Implementar y verificar soluciones.
+    \item \textbf{Controlar (Control):} Estandarizar la solución para mantener la mejora en el tiempo.
+\end{enumerate}
+
+\section{Análisis Comparativo e Integración}
+La elección entre Scrum y Lean Six Sigma no es mutuamente excluyente; depende de la naturaleza del proyecto. La Tabla \ref{tab:comparativa} resume sus diferencias clave.
+
+\begin{table}[h]
+\centering
+\caption{Comparativa técnica entre Scrum y Lean Six Sigma}
+\label{tab:comparativa}
+\begin{tabularx}{\textwidth}{@{} l X X @{}}
+\toprule
+\textbf{Dimensión} & \textbf{Scrum} & \textbf{Lean Six Sigma} \\ 
+\midrule
+\textbf{Objetivo Principal} & Entrega rápida de valor e innovación. & Reducción de variabilidad y eliminación de desperdicios. \\ 
+\addlinespace
+\textbf{Entorno Ideal} & Alta incertidumbre, requerimientos dinámicos (ej. desarrollo de software). & Procesos estables y repetitivos (ej. manufactura, líneas de ensamblaje). \\ 
+\addlinespace
+\textbf{Enfoque de Mejora} & Retrospectivas empíricas al final de cada iteración (Sprint). & Análisis estadístico riguroso (Ciclo DMAIC). \\ 
+\addlinespace
+\textbf{Gestión del Riesgo} & Mitigado mediante entregas incrementales tempranas. & Mitigado mediante la eliminación de causas raíz de defectos. \\ 
+\bottomrule
+\end{tabularx}
+\end{table}
+
+En la práctica industrial moderna, como la integración mecatrónica o el desarrollo de gemelos digitales, las organizaciones suelen emplear modelos híbridos. Por ejemplo, utilizan Scrum para la fase de Investigación y Desarrollo (I+D) y programación de interfaces, mientras aplican Lean Six Sigma para estabilizar la fabricación del hardware y optimizar la cadena de suministro.
+
+\section{Conclusión}
+Agile y Scrum proporcionan la resiliencia necesaria para navegar la complejidad y construir productos innovadores que se adapten a las necesidades cambiantes del usuario. Por su parte, Lean Six Sigma aporta la disciplina matemática y operativa para garantizar que dichos productos se construyan y distribuyan con la máxima calidad y el menor costo posible. Dominar ambos enfoques permite a los ingenieros y gestores de proyectos aplicar la herramienta correcta según el nivel de madurez y la variabilidad del proceso que enfrentan.
+
+\newpage
+% Bibliografía manual (sin necesidad de archivo .bib externo para facilitar la compilación)
+\begin{thebibliography}{9}
+
+\bibitem{beck2001}
+Beck, K., et al. (2001). \textit{Manifiesto por el Desarrollo Ágil de Software}. Recuperado de \url{https://agilemanifesto.org/iso/es/manifesto.html}
+
+\bibitem{schwaber2020}
+Schwaber, K., \& Sutherland, J. (2020). \textit{La Guía de Scrum: La Guía Definitiva de Scrum: Las Reglas del Juego}. Scrum.org.
+
+\bibitem{george2002}
+George, M. L. (2002). \textit{Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed}. McGraw-Hill Education.
+
+\end{thebibliography}
+
+\end{document}
